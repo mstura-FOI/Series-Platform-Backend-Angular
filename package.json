@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "base32-encoding": "^1.0.0",
+    "cookie-parser": "file:../../../../home/mstura/.nvm/versions/node/v21.4.0/lib/node_modules/cookie-parser",
+    "cors": "^2.8.5",
+    "express": "file:../../../../home/mstura/.nvm/versions/node/v21.4.0/lib/node_modules/express",
+    "express-session": "file:../../../../home/mstura/.nvm/versions/node/v21.4.0/lib/node_modules/express-session",
+    "jsonwebtoken": "^9.0.2",
+    "node": "^21.1.0",
+    "nodemailer": "^6.9.7",
+    "promises": "^0.2.5",
+    "semver": "^7.5.4",
+    "sqlite3": "file:../../../../home/mstura/.nvm/versions/node/v21.4.0/lib/node_modules/sqlite3",
+    "totp-generator": "^0.0.14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pripremi": "npm link --save express sqlite3 express-session cookie-parser",
+    "start": "npm link --save express sqlite3 express-session cookie-parser && node aplikacija/server.mjs konfiguracija.csv"
+  }
+}
