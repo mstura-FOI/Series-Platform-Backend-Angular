@@ -182,7 +182,7 @@ exports.totpReset = async function(zahtjev,odgovor){
 }
 exports.putKorisnik = async function (zahtjev, odgovor) {
     try {
-    const response = await fetch('https://www.google.com/recaptcha/api/siteverify?secret=6LfOCkUpAAAAACvkg-kLTj8CkCeFcQAicA6O4j38&response='+zahtjev.body.token)
+    const response = await fetch('https://www.google.com/recaptcha/api/siteverify?secret=&response='+zahtjev.body.token)
     const data = JSON.parse(await response.text());
     console.log(data.score+"Azuriranje data")
     if(data.score > 0.5){
